@@ -15,6 +15,7 @@ djangocms-cascade = "*"
 drf-yasg = "*"
 django-heroku = "*"
 gunicorn = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.9"
