@@ -13,6 +13,8 @@ django-environ = "*"
 python-decouple = "*"
 djangocms-cascade = "*"
 drf-yasg = "*"
+django-heroku = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.9"
