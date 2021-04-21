@@ -26,9 +26,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure--0%etcg%1oqj8a5+fb$^4838=eqw8)+b43tv7^59-+525)ftx5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG =config('DEBUG',False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['turikumwe.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -65,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -135,13 +136,13 @@ USE_L10N = True
 USE_TZ = True
 
 #jwt
-JWT_SECRET_KEY=('JWT_SECRET_KEY')
+JWT_SECRET_KEY=config('JWT_SECRET_KEY')
  
 
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 STATIC_URL = '/static/'
 
 # Default primary key field type
