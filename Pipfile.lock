@@ -158,11 +158,11 @@
         },
         "djangocms-cascade": {
             "hashes": [
-                "sha256:3a02d3ff0a68b59c0f7004770ea9814dfe5e10785ab0b282598a74299da8b9ce",
-                "sha256:d6d445f82e81011b73079415aa7e0bd58feca6d6c67b291159f7a42ca2722647"
+                "sha256:d571b91bd673ba4e2576ffff9f102294232d35148df562b88b59cb2525ab0649",
+                "sha256:f2b7e42e3288f4eeb0d42766ad3812f5eefe222907cee623e4862ede5aff4546"
             ],
             "index": "pypi",
-            "version": "==2.0.5"
+            "version": "==2.0.6"
         },
         "djangocms-text-ckeditor": {
             "hashes": [
@@ -189,7 +189,8 @@
         },
         "gunicorn": {
             "hashes": [
-                "sha256:e0a968b5ba15f8a328fdfd7ab1fcb5af4470c28aaf7e55df02a99bc13138e6e8"
+                "sha256:e0a968b5ba15f8a328fdfd7ab1fcb5af4470c28aaf7e55df02a99bc13138e6e8",
+                "sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e"
             ],
             "index": "pypi",
             "version": "==20.1.0"
@@ -361,11 +362,11 @@
         },
         "pyjwt": {
             "hashes": [
-                "sha256:a5c70a06e1f33d81ef25eecd50d50bd30e34de1ca8b2b9fa3fe0daaabcf69bf7",
-                "sha256:b70b15f89dc69b993d8a8d32c299032d5355c82f9b5b7e851d1a6d706dffe847"
+                "sha256:934d73fbba91b0483d3857d1aff50e96b2a892384ee2c17417ed3203f173fca1",
+                "sha256:fba44e7898bbca160a2b2b501f492824fc8382485d3a6f11ba5d0c1937ce6130"
             ],
             "index": "pypi",
-            "version": "==2.0.1"
+            "version": "==2.1.0"
         },
         "pyparsing": {
             "hashes": [
