@@ -142,7 +142,7 @@ USE_TZ = True
 JWT_SECRET_KEY= os.environ.get('JWT_SECRET_KEY')
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-
+CORS_ORIGIN_WHITELIST=["http://locolhost:8000"]
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
