@@ -23,11 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')  
+SECRET_KEY = 'django-insecure--0%etcg%1oqj8a5+fb$^4838=eqw8)+b43tv7^59-+525)ftx5'  
  
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG' ) 
+DEBUG = bool(os.environ.get('DEBUG', False)) 
 
 ALLOWED_HOSTS = []
 
@@ -139,7 +139,7 @@ USE_L10N = True
 USE_TZ = True
 
 #jwt
-JWT_SECRET_KEY= config('JWT_SECRET_KEY')
+JWT_SECRET_KEY= os.environ.get('JWT_SECRET_KEY')
 
 
 # Static files (CSS, JavaScript, Images)
